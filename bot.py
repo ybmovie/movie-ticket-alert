@@ -1,3 +1,4 @@
+import os
 from telegram import Update
 from telegram.ext import (
     ApplicationBuilder,
@@ -5,7 +6,7 @@ from telegram.ext import (
     ContextTypes
 )
 
-BOT_TOKEN = "8847412777:AAFIltf8GIaOlexDXjLbXLu9haWNf_Zq8EA"
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 
 tracked_movies = []
 
